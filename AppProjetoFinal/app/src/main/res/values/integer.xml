@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="HELP">0</integer>
+    <integer name="NO_CONNECTION">1</integer>
+    <integer name="GALLERY_PERMISSION_DENIED">2</integer>
+    <integer name="LOCATION_PERMISSION_DENIED">3</integer>
+    <integer name="TOO_MANY_ITEMS">4</integer>
+    <integer name="BATTERY_LOW">5</integer>
+    <integer name="CONFIRM_DELETE_LOCATION">6</integer>
+    <integer name="CONFIRM_DELETE_DATABASE">7</integer>
+</resources>

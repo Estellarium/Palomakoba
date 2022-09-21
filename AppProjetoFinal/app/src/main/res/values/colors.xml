@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme -->
+    <color name="bg">#B9D3C2</color>
+    <color name="bg_fade">#A5B076</color>
+    <color name="accent">#A5B076</color>
+    <color name="focus">#F8C967</color>
+    <color name="option">#DFD2AE</color>
+    <color name="fade">#FDFCF8</color>
+    <color name="text">#4E342E</color>
+    <color name="invisColor">#F8C967</color>
+    <color name="radio">#A5B076</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

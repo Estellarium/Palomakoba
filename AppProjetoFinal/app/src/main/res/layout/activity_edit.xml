@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".running.activities.EditActivity">
+
+    <TextView
+        android:id="@+id/txtEditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/label_edit_data"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inNome"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_in_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtFotoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_photo"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inNome" />
+
+    <ImageView
+        android:id="@+id/imgSelec"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/desc_loaded_pic"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFotoLabel"
+        app:srcCompat="@mipmap/pic_missing" />
+
+    <Button
+        android:id="@+id/btnPick"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/desc_select_pic"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAlignment="center"
+        android:textSize="0sp"
+        app:icon="@android:drawable/ic_menu_set_as"
+        app:iconGravity="textEnd"
+        app:iconPadding="0dp"
+        app:iconTint="@color/text"
+        app:layout_constraintStart_toStartOf="@+id/imgSelec"
+        app:layout_constraintTop_toBottomOf="@+id/imgSelec" />
+
+    <Button
+        android:id="@+id/btnRot"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/desc_rotate_pic"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAlignment="center"
+        android:textSize="0sp"
+        app:icon="@android:drawable/ic_menu_rotate"
+        app:iconGravity="textEnd"
+        app:iconPadding="0dp"
+        app:iconTint="@color/text"
+        app:layout_constraintEnd_toEndOf="@+id/imgSelec"
+        app:layout_constraintTop_toBottomOf="@+id/imgSelec" />
+
+    <TextView
+        android:id="@+id/txtImgPath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="6"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/path_default"
+        app:layout_constraintEnd_toStartOf="@+id/btnRot"
+        app:layout_constraintStart_toEndOf="@+id/btnPick"
+        app:layout_constraintTop_toTopOf="@+id/btnPick" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/button_save"
+        android:textColor="@color/text"
+        app:layout_anchorGravity="top|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSelec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

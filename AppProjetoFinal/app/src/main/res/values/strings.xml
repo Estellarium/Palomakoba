@@ -1,0 +1,123 @@
+
+<resources>
+
+    <!--Geral/Global-->
+    <string name="app_name">Registros CEP</string>
+
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="ok">Entendi</string>
+    <!--Geral/Global-->
+
+    <!--Dialogs-->
+    <string name="info_title">Como utilizar?</string>
+    <string name="info_text">Clique no botão + para pesquisar por um CEP. Se ele for encontrado, poderá adicioná-lo para
+        o seu registro. Opcionalmente, pode definir um nome e uma imagem para representar algo
+        sobre este local.
+        \n\nClique em um item da lista para visualizar ou editar seus detalhes. Segure para apagá-lo.
+        Se enjoar de seus registros, pode apagar todos ao clicar em <i>APAGAR DADOS.</i>
+        Isso é <i><b>permanente e irreversível</b></i>!
+    </string>
+
+    <string name="connection_title">Falha na conexão</string>
+    <string name="fail_connection">Você precisa estar conectado à internet para pesquisar um CEP.</string>
+
+    <string name="permission_title">Permissão negada</string>
+    <string name="fail_gallery">Você precisa permitir o acesso à galeria para escolher uma foto.</string>
+
+    <string name="fail_location">Você precisa permitir o acesso à localização.</string>
+
+    <string name="full_title">Locais demais!</string>
+    <string name="list_full">A lista está cheia! Apague um item para poder adicionar outro.</string>
+
+    <string name="delete_title">Excluir dados</string>
+    <string name="local_deletion">Deseja realmente excluir o local %1$s?
+        \n\nIsso não pode ser desfeito, e os dados serão perdidos.
+    </string>
+
+    <string name="warn_deletion">Deseja realmente excluir todos os locais?
+        \n\nIsso <i><b>não</b> pode ser desfeito, e os dados serão perdidos.</i>
+    </string>
+    <!--Dialogs-->
+
+    <!--Sensores-->
+    <string name="alert">Alerta</string>
+    <string name="battery_low">A bateria está baixa!</string>
+    <string name="battery_critical">A bateria está em nível crítico!</string>
+    <string name="loading">Carregando…</string>
+    <string name="percentage">Bateria a %1$d\%</string>
+
+    <string name="no_connection">Sem conexão</string>
+    <!--Sensores-->
+
+    <!--Toasts-->
+    <string name="no_data">Não há dados para excluir!</string>
+    <string name="delete">Excluído com sucesso!</string>
+    <string name="del_fail">Erro ao excluir!</string>
+    
+    <string name="edit_suc">Dados atualizados!</string>
+    <string name="edit_fail">Erro ao atualizar!</string>
+
+    <string name="create_suc">Localização criada!</string>
+    <string name="create_fail">Erro ao criar!</string>
+
+    <string name="goodbye">Até mais!</string>
+    <!--Toasts-->
+
+    <!--CEP-->
+    <string name="undefined"> indefinido</string>
+    <string name="undefined_f"> indefinida</string>
+    
+    <string name="CEP">CEP</string>
+    <string name="Logr">Logradouro</string>
+    <string name="Comp">Complemento</string>
+    <string name="Bair">Bairro</string>
+    <string name="Loca">Cidade</string>
+    <string name="UF">UF</string>
+    <string name="label_location">Localização</string>
+
+    <string name="date_format" translatable="false">dd/MM/yyyy\'\nàs\' HH:mm</string>
+    <string name="cur_date_format">dd/MM/yyyy\'\nàs\' HH:mm</string>
+    <string name="date_cr">Data de criação:</string>
+    <string name="date_ed">Data de edição:</string>
+    
+    <string name="searching">Buscando…</string>
+    <string name="cep_not_found">CEP não encontrado</string>
+    <!--CEP-->
+
+    <!--Layout-->
+    <!--MainActivity-->
+    <string name="label_title">Registro de Locais</string>
+    <string name="label_subtitle">Salve o CEP de seus locais favoritos!</string>
+    <string name="button_delete">Apagar Dados</string>
+    <string name="desc_icon">Ícone do Aplicativo</string>
+    <string name="desc_help">Ajuda</string>
+    <string name="desc_theme">Tema</string>
+    <string name="desc_new">Criar Local</string>
+    <!--LocalActivity-->
+    <string name="desc_photo">Foto do Local</string>
+    <string name="desc_edit">Editar Dados</string>
+    <!--InputActivity-->
+    <string name="hint_in_cep">Insira um CEP:</string>
+    <string name="confirm">Confirmar</string>
+    <string name="add">Adicionar</string>
+    <!--EditActivity-->
+    <string name="label_photo">Foto</string>
+    <string name="hint_in_nome">Nome</string>
+    <string name="label_edit_data">Editar dados</string>
+    <string name="desc_loaded_pic">Imagem carregada</string>
+    <string name="desc_select_pic">Selecionar Imagem</string>
+    <string name="desc_rotate_pic">Girar Imagem</string>
+    <string name="path_default">sem imagem</string>
+    <string name="button_save">Salvar</string>
+    <!--PickTheme-->
+    <string name="pick_theme">Selecione um tema:</string>
+    <string name="mode_systm">Automático</string>
+    <string name="mode_light">Diurno</string>
+    <string name="mode_night">Noturno</string>
+    <!--Layout-->
+    
+
+
+
+</resources>

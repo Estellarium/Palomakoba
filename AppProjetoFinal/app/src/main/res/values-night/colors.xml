@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night Theme -->
+    <color name="bg">#0E1626</color>
+    <color name="bg_fade">#1D2C4D</color>
+    <color name="accent">#2B6574</color>
+    <color name="focus">#94CABF</color>
+    <color name="option">#2B6574</color>
+    <color name="fade">#2F497C</color>
+    <color name="text">#94CABF</color>
+    <color name="invisColor">#2F497D</color>
+    <color name="radio">#94CABF</color>
+</resources>

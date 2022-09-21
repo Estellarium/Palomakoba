@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RegistrosCEP" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent</item>
+        <item name="android:windowBackground">@drawable/background_gradient</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:buttonTint">@color/radio</item>
+        <item name="colorSurface">@color/transparent</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/focus</item>
+        <item name="colorSecondaryVariant">@color/focus</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="snackbarStyle">@style/Snackbar</item>
+        <item name="dialogTheme">@style/Dialog</item>
+    </style>
+
+    <style name="TextInput" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        ....
+        <item name="boxStrokeColor">@color/text</item>
+        <item name="hintTextColor">@color/text</item>
+        <item name="android:textColorHint">@color/text</item>
+        <item name="android:textCursorDrawable">@color/text</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/background_gradient</item>
+        <item name="colorAccent">@color/text</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="buttonBarButtonStyle">@style/DialogButtonStyle</item>
+    </style>
+
+    <style name="DialogButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+
+    <style name="Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:backgroundTint">@color/bg</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:actionMenuTextColor">@color/focus</item>
+    </style>
+
+    <style name="Activity_Transparent" parent="Theme.RegistrosCEP">
+        <item name="theme">@android:style/Theme.Translucent.NoTitleBar</item>
+    </style>
+
+    <style name="Theme.RegistrosCEP.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RegistrosCEP.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.RegistrosCEP.NoActionBar.PopupOverlay" parent="Theme.AppCompat.DayNight.DarkActionBar" />
+
+</resources>
