@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextEscolha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="casual"
+                android:text="Escolha seu produto"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rgProdutos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp">
+
+                <CheckBox
+                    android:id="@+id/ckArroz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arroz (R$3,50)" />
+
+                <CheckBox
+                    android:id="@+id/ckCarne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carne (R$12,30)" />
+
+                <CheckBox
+                    android:id="@+id/ckPao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pão (R$2,20)" />
+
+                <CheckBox
+                    android:id="@+id/ckLeite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leite (R$5,50)" />
+
+                <CheckBox
+                    android:id="@+id/ckOvos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ovos (R$7,50)" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTotal"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="32dp"
+                    android:backgroundTint="@color/gray"
+                    android:insetTop="6dp"
+                    android:insetBottom="6dp"
+                    android:text="TOTAL"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtValor"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="casual"
+                    android:text="Valor:"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextAlgumDesconto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="casual"
+                android:text="Algum desconto?"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rgDesconto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:checkedButton="@id/rb0"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sem desconto" />
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5%" />
+
+                <RadioButton
+                    android:id="@+id/rb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10%" />
+
+                <RadioButton
+                    android:id="@+id/rb15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15%" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/TextValorPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="casual"
+                android:text="Valor pago pelo cliente"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <Button
+                android:id="@+id/btnPagar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/gray"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="EFETUAR PAGAMENTO"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

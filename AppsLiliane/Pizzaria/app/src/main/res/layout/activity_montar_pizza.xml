@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MontarPizza">
+
+    <TextView
+        android:id="@+id/tipoPizza"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Pizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/tamPizza"
+        android:layout_width="153dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoPizza">
+
+        <RadioButton
+            android:id="@+id/pizzaP"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="P" />
+
+        <RadioButton
+            android:id="@+id/pizzaM"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/pizzaG"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="G" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tamPizza"
+        app:layout_constraintTop_toBottomOf="@+id/indecrement" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Adicionar"
+        app:layout_constraintStart_toEndOf="@+id/tamPizza"
+        app:layout_constraintTop_toBottomOf="@+id/valor" />
+
+    <LinearLayout
+        android:id="@+id/indecrement"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tamPizza"
+        app:layout_constraintTop_toBottomOf="@+id/tipoPizza">
+
+        <Button
+            android:id="@+id/btDec"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="-"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:iconPadding="2dp" />
+
+        <TextView
+            android:id="@+id/qtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btInc"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="+"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:iconPadding="2dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
